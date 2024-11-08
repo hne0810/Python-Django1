@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Subject list</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>Subjects</h1>
+        <table>
+            <tr>
+                <th>Subject Name</th>
+                <th>Subject ID</th>
+            </tr>
+            {% for subject in subjects %}
+            <tr>
+                <td>{{ subject.name }}</td>
+                <td>{{ subject.id }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
